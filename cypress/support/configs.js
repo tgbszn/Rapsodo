@@ -16,6 +16,14 @@ export default {
     },
     "appGolf": {
         "selector": "#Sublabel-pages-shop-golf"
+    },
+    "appAddToCart": {
+        "selector": ".StickyMobileSingle"
+    },
+    "webAddToCart": {
+        "selector": "#AddToCartNormal"
+    },
+    "webCartItem": {
+        "selector": ".cart__item"
     }
-
 }

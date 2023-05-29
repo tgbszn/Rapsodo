@@ -2,6 +2,19 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   "chromeWebSecurity": false,
+  numTestsKeptInMemory: 5,
+  experimentalMemoryManagement: true,
+  pageLoadTimeout: 60000,
+  requestTimeout: 60000,
+  responseTimeout: 60000,
+  defaultCommandTimeout: 30000,
+  "compilerOptions": {
+    "types": ["cypress", "cypress-plugin-stripe-elements"]
+  },
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  },
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -12,4 +25,5 @@ module.exports = defineConfig({
       "url": "https://rapsodo.com/",
     }
   },
+  
 });
