@@ -1,7 +1,9 @@
 /// <reference types="cypress" />
 import configs from "../../support/configs";
 import { testWrapper } from "../../utilities/viewport"
+import { browserify } from "../../plugins";
 
+browserify();
 
 describe('Verify the shopping cart is empty', { testIsolation: false }, function () {
     testWrapper({ itTitle: "Check on mobile that the cart is empty when the page opens.", viewportGroup: "app" }, () => {

@@ -1,6 +1,9 @@
 /// <reference types="cypress" />
 import configs from "../../support/configs";
 import { testWrapper } from "../../utilities/viewport"
+import { browserify } from "../../plugins";
+
+browserify();
 
 describe('Rapsodo Golf Button Test', { testIsolation: false }, function () {
     testWrapper({ itTitle: "Should select Mobile Launch Monitor (MLM) from Golf button for Mobile.", viewportGroup: "web" }, () => {

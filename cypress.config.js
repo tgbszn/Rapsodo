@@ -11,6 +11,7 @@ module.exports = defineConfig({
   "compilerOptions": {
     "types": ["cypress", "cypress-plugin-stripe-elements"]
   },
+  
   "retries": {
     "runMode": 2,
     "openMode": 0
@@ -25,5 +26,6 @@ module.exports = defineConfig({
       "url": "https://rapsodo.com/",
     }
   },
+ 
   
 });

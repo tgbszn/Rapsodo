@@ -12,7 +12,7 @@
     "cypress": "^12.13.0"
   },
   "dependencies": {
-    "dropbox": "^10.34.0"
+    "dropbox": "^10.34.0",
+    "node-fetch": "^3.3.1"
   }
-  
 }
